@@ -2,6 +2,7 @@ from pathlib import Path
 import streamlit as st
 from PIL import Image
 
+
 # --- PATH SETTINGS ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
@@ -12,6 +13,7 @@ favicon = "https://res.cloudinary.com/dvz16ceua/image/upload/v1692056331/sihem/f
 
 # --- GENERAL SETTINGS ---
 NAME = "Sihem Ouled Hsin"
+PAGE_TITLE = "CV | sihem ouled hsin"
 DESCRIPTION = """
 Junior developer, interested in python.
 """
@@ -34,9 +36,10 @@ PROJECTS = {
     "🏅 Vitrine Website - Ste Affes Freres Official Juice Company Website with WordPress": "https://affesfreres.com",
     "🏅 Booking website - Dar Lella Aicha guest house website with wordpress": "https://affesfreres.com"
 
-
-
 }
+
+st.set_page_config(page_title=PAGE_TITLE, page_icon=favicon)
+
 
 # --- LOAD CSS, PDF & PROFILE PIC ---
 with open(css_file) as f:
@@ -44,6 +47,7 @@ with open(css_file) as f:
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 profile_pic = Image.open(profile_pic)
+
 
 # --- HERO SECTION ---
 col1, col2 = st.columns(2, gap="small")
@@ -68,21 +72,6 @@ with col2:
     file_name=resume_file.name,
     mime="application/octet-stream")
 
-# Sidebar content
-with st.sidebar.container():
-    col1, col2 = st.columns([1, 2])
-    with col1:
-        st.image(favicon)
-    with col2:
-        st.markdown(
-            """
-            <div style="font-size: 16px; font-weight: bold; margin-top: 15px;">Main Menu</div>
-            """
-            , unsafe_allow_html=True)
-        
-
-
-
 
 # --- EXPERIENCE & QUALIFICATIONS ---
 st.write('\n')
@@ -99,7 +88,6 @@ st.write(
 # --- SKILLS ---
 st.write('\n')
 st.subheader("Technical Proficiencies")
-st.write("---")
 st.write(
     """
 - ► Programming: Python ,Java, SQL ,HTML/CSS
