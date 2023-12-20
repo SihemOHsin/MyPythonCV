@@ -121,8 +121,8 @@ st.write("‍💻", "**Ebusiness Consultant | VirtuA Agency**")
 st.write("10/2020 - 12/2022")
 st.write(
     """
-- ► Managing legal and financial matters as the creator of the company.
-- ► Providing coaching and creating online ad campaigns for clients.
+- ► Providing coaching on thinkific.
+- ► Creating online ad campaigns for clients.
 - ► Responsible of online brand positioning for clients and launching new products.
 """
 )
