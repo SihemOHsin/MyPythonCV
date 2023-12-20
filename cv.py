@@ -24,6 +24,7 @@ SOCIAL_MEDIA = {
     "Leetcode": "https://leetcode.com/SihemOuledHsin",
 }
 PROJECTS = {
+    "🏅 Order management system - web application with SpringBoot, Angular ,mySql,AWS": "https://github.com/SihemOHsin/OrderManagementSystem",
     "🏅 Stock management system Dashboard - web application with JEE ,mySql & Xamp": "https://github.com/SihemOHsin/JEE_stockProject",
     "🏅 Stock microservice for ERP - PFA project with springBoot, Eureka, keycloak & sqlserver": "https://www.asm-tunisie.com/logiciel-erp-dux",
     "🏅 Orders microservices - end of the year shool project with asp.net ,gateway Ocelot,RabbitMQ ": "https://github.com/SihemOHsin/.net_microservicesProject",
@@ -104,7 +105,7 @@ st.subheader("Experience")
 st.write("---")
 
 # --- JOB 1
-st.write("‍💻", "**Internship | asm - All Soft Multimedia**")
+st.write("‍💻", "**Java Spring Developer trainee | asm - All Soft Multimedia**")
 st.write("04/2023 - 07/2023")
 st.write(
     """
